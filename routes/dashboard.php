@@ -1,12 +1,14 @@
 <html>
     <head>
         <title>Online Voting System - Dashboard</title>
-        <link href="../css/body.css" rel="stylesheet">
+        <link href="../css/dashboard.css" rel="stylesheet">
     </head>
 
     <body>
-        <button>Back</button>
-        <button>Logout</button>
+        <div id="div-btn">
+            <button id="btn-back">Back</button>
+            <button id="btn-logout">Logout</button>
+        </div>
         <h1>Online Voting System</h1>
         <hr>
         <div id="Profile"></div>

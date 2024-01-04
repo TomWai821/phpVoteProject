@@ -1,0 +1,27 @@
+body{
+    background-color: #b8e994;
+}
+
+h1{
+    text-align: center;
+}
+
+#div-btn {
+    display: flex;
+    justify-content: space-between;
+}
+
+#btn-back, #btn-logout{
+    height: 30px;
+    width: 60px;
+    border-radius: 5px;
+
+}
+
+#btn-back{
+    margin-left: 10px;
+}
+
+#btn-logout{
+    margin-right: 10px;
+}
