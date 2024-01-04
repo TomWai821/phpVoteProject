@@ -1,6 +1,7 @@
 <html>
     <head>
         <title>Online Voting System - Dashboard</title>
+        <link href="../css/body.css" rel="stylesheet">
     </head>
 
     <body>
@@ -11,4 +12,4 @@
         <div id="Profile"></div>
         <div id="Group"></div>
     </body>
-<html>
+</html>

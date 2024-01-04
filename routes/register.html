@@ -16,16 +16,24 @@
             <input type="password" name="password" placeholder="Password"></input>
             <input type="password2" name="password2" placeholder="Confirm Password"></input><br>
             
-            <input type="address" name="address" placeholder="Address"></input><br>
+            <input type="address" name="address" placeholder="Address" id="input-address"></input><br>
 
-            Upload image:
-            <input type="file" name="photo">
-            Select your role:
-            <select name="role">
-                <option value="1">Voter</option>
-                <option value="2">Group</option>
-            </select>
-            <button>Register</button>
+            <section id="borders">
+                <div id="border">
+                    Upload image:
+                    <input type="file" name="photo" >
+                </div>
+
+                <div id="border">
+                    Select your role:
+                    <select name="role">
+                        <option value="1">Voter</option>
+                        <option value="2">Group</option>
+                    </select>
+                </div>
+            </section>
+            <button id="btn-register">Register</button>
         </form>
+        Already user? <a href="../index.html">Login here</a>
     </body>
 </html>
