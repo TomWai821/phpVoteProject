@@ -6,22 +6,108 @@ h1{
     text-align: center;
 }
 
-#div-btn {
-    display: flex;
-    justify-content: space-between;
-}
-
 #btn-back, #btn-logout{
     height: 30px;
     width: 60px;
     border-radius: 5px;
-
+    cursor: pointer;
 }
 
 #btn-back{
     margin-left: 10px;
+    float: left;
 }
 
 #btn-logout{
     margin-right: 10px;
+    float: right;
 }
+
+#section-panels{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 50px;
+}
+
+#div-profile, #div-group{
+    display: flex;
+    flex-direction: column;
+}
+
+#div-profile{
+    width: 500px;
+    height: 60vh;
+    background-color: gray;
+    padding: 30px;
+}
+
+#profile-border{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    align-items: center;
+}
+
+#div-profile, #div-groups, #profile-border, #div-group{
+    border-radius: 20px;
+}
+
+#div-profile img{
+    margin-top: 40px;
+}
+
+#div-profile #status{
+    margin-bottom: 60px;
+}
+
+#div-profile b{
+    margin: 20px;
+    font-size: 20px;
+}
+
+#div-groups{
+    background-color: gray;
+    width: 60%;
+}
+
+#div-group{
+    height: 160px;
+    padding: 10px;
+    margin: 20px;
+    background-color: white;
+}
+
+    
+#div-group b, #div-group input{
+    margin: 10px;
+}
+
+#div-group b, #div-profile b{
+    font-size: 20px;
+}
+
+#btn-vote{
+    cursor: pointer;
+}
+
+#btn-voted{
+    background-color: green;
+    color: white;
+}
+
+#btn-vote, #btn-voted{
+    border-radius: 5px;
+    height: 40px;
+    width: 80px;
+}
+
+#btn-vote, #btn-logout, #btn-back{
+    transition: 0.3s ease;
+}
+
+#btn-vote:hover, #btn-logout:hover, #btn-back:hover{
+    background-color: gray;
+    color: white;
+}
+
