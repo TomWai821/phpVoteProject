@@ -9,26 +9,26 @@
     $address = $_POST['address'];
 
     $image = $_FILES['photo']['name'];
-    $temp_name = $_FILES['photo']['tmp_name']
+    $temp_name = $_FILES['photo']['tmp_name'];
     
-    $role = $_POST['role']
+    $role = $_POST['role'];
 
     if($password == $password2){
         move_uploaded_file($temp_name, "../uploads/$image");
-        $insert = mysqli_query($connect ,"INSERT INTO user (name, mobile, password, address, photo, role, status, vote) 
+        $insert = mysqli_query($connect ,"INSERT INTO user (name, mobile, password, address, photo, role, status, votes) 
             VALUES ('$name' , '$mobile' , '$password' , '$address', '$image', '$role', '0', '0')");
         if($insert){
             echo "
             <script>
-                alert('Registration Successfull!')
-                window.location = "../"
+                alert('Registration Successfull!');
+                window.location = '../routes/dashboard.php';
             </script>
             ";
         }else{
             echo "
             <script>
                 alert('Some error occured!');
-                windows.location = "../routes/register.html"
+                windows.location = '../routes/register.html';
             </script>
             ";
         }
@@ -36,7 +36,7 @@
         echo "
         <script>
             alert('Password and Confirm password does not match!');
-            window.location = "../routes/register.html";
+            window.location = '../routes/register.html';
         </script>
         ";
     }
